@@ -1,0 +1,122 @@
+body {
+  background-color: #f8dade;
+}
+.navbar-nav {
+  font-family: Arial;
+}
+footer {
+  background-color: #aaa;
+}
+.hero {
+  background: url(../images/Imagen3.png);
+  background-size: cover;
+  height: 50vh;
+  min-height: 700px;
+  color: black;
+}
+h1 {
+  font-family: "Oranienbaum", serif;
+  color: black;
+  text-align: center;
+  font-size: 500%;
+}
+.ver-colección {
+  font-family: Arial, serif;
+  color: 248, 218, 222;
+  text-align-last: center;
+}
+h2 {
+  font-family: "Oranienbaum", serif;
+  color: black;
+  font-size: 300%;
+}
+.intro {
+  font-family: Arial;
+  font-size: large;
+  font-style: italic;
+  text-align: justify;
+  padding-right: 45px;
+}
+.Seguir-leyendo {
+  color: dimgray;
+}
+.nosotros {
+  float: left;
+}
+.asesoria1 {
+  font-family: Arial;
+  font-size: large;
+  font-style: italic;
+  text-align: justify;
+}
+.carouselTitulos {
+  color: black;
+  font-size: 200%;
+}
+.descripcion {
+  color: black;
+  font-style: italic;
+}
+.deco {
+  text-align: center;
+}
+.seccionDeco {
+  font-family: Arial;
+  color: black;
+  font-style: italic;
+  text-align: center;
+  font-size: larger;
+}
+.card-title {
+  font-family: Arial;
+  text-align: center;
+}
+.consultas {
+  font-family: Arial;
+  color: black;
+  font-style: italic;
+  text-align: center;
+  font-size: larger;
+  padding-left: 45px;
+}
+
+.btn-light {
+  background-color: #f8dade;
+  border-color: #f8dade;
+  font-family: arial;
+}
+.card-text {
+  font-family: arial;
+  text-align: justify;
+  font-size: small;
+}
+.formulario {
+  padding-left: 55px;
+}
+.form-label {
+  font-family: arial;
+}
+
+.enviar {
+  background-color: white;
+  border-color: #f8dade;
+  font-family: arial;
+}
+.botonEnvio {
+  float: right;
+  padding-left: 80px;
+}
+.conectados {
+  font-family: Oranienbaum;
+  text-align: center;
+}
+.iconoFace {
+  font-family: "FontAwesome";
+
+  color: grey;
+}
+.iconoInsta {
+  font-family: "FontAwesome";
+  font-size: 100px;
+  color: grey;
+}
