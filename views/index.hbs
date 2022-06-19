@@ -13,7 +13,7 @@
           <a class="nav-link" href="#nosotros">Nosotros</a>
           <a class="nav-link" href="#asesorias">Asesorias</a>
           <a class="nav-link" href="#decoracion">Decoración</a>
-          <a class="nav-link" href="#tendencias">Tendencias</a>
+          <a class="nav-link" href="#novedades">Novedades</a>
           <a class="nav-link" href="#contacto">Contacto</a>
         </div>
       </div>
@@ -47,8 +47,8 @@
     </div>
     <!--empieza Asesorias-->
     <div class="col-lg-5 py-5">
-      <h2 id="aseosrias">Asesorias</h2>
-      <p class="asesoria1 py-4"> <strong>No sabes por donde empezar? No desesperes!</strong>
+      <h2 id="asesorias">Asesorias</h2>
+      <p class="asesorias py-4"> <strong>No sabes por donde empezar? No desesperes!</strong>
         Contamos con asesorias personalizadas en donde te
         ayudamos a decidir la mejor opción para que tu espacio quede divino!
       </p>
@@ -175,48 +175,30 @@
     </div>
   </div>
   <!--termina decoracion-->
-  <!--Arranca Tendencias-->
+  <!--Arranca Novedades-->
   <div class="row">
     <div class="col-lg-5 offset-lg-1 py-5">
-      <h2  id="tendencias" class="deco">Tendencias</h2>
+      <h2  id="novedades" class="deco">Novedades</h2>
       <p class="seccionDeco py-4"> Si estás pensando en cambiar la decoración y buscas inspiración, aca te contamos
         cuáles
         son
         los estilos de
-        decoración de interiores más populares y las claves para obtenerlos.</p>
-      <div class="col-lg-5 offset-lg-1 "></div>
-      <div class="card-group">
-        <div class="card">
-          <img src="images/Enredados (12).png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title"> Beneficios de la decoración</h5>
-            <p class="card-text"> Nuestro hogar es nuestro refugio y es vital sentirnos bien en
-              todas las estancias, por eso mejorar la decoración de nuestra casa no es solo cosa de interiorismo, sino
-              que nos brinda muchas otras ventajas..</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/tendencias1.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Accesorios para tu cocina</h5>
-            <p class="card-text">En esta sección te contamos cuales son los accesorios que si o si tienen que estar en
-              tu cocina.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="images/tendencias3.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Velas ¿Si o no?</h5>
-            <p class="card-text">La iluminación de los ambientes a menudo no se tiene en cuenta a la hora de decorar
-              la casa, pero es una parte muy importante del diseño de interiores. Incorporar velas, lámparas de mesa,
-              portavelas o farolillos nos ayudará a crear ambientes íntimos y acogedores a la…</p>
-          </div>
-        </div>
-      </div>
+        decoración de interiores más populares y las claves para obtenerlos.
+      </p>
+      <div class="col-lg-5 offset-lg-1"></div>
+      <div class="card-novedades">
+        <!--<div class="card">-->
+          {{#each novedades}}
+          <a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="images/Diseño sin título (10).png" class="card-img-top" alt="..."></a>
+          
+            <h5 class="card-title">{{titulo}}</h5>
+          {{/each}}
+       <!-- </div>-->    
+      </div>                 
     </div>
-    <!--termina Tendencias-->
+    <!--termina Novedades-->
     <!--Arranca Contacto-->
-    <div class="col-lg-4 py-5">
+    <div class="col-lg-5 py-5">
       <h2 id="contacto" class=" formulario deco">Contacto</h2>
       <p class="consultas py-4">¿Consultas o sugerencias? Envianos tu mensaje:</p>
       <form action="/" method="post">

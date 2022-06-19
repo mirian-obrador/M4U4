@@ -5,11 +5,52 @@
       <p class="text-right">
         <span> Hola {{usuario}}!! </span>
 
-        <button><a href="/admin/login/logout" class="btn-btn-primary">
-          Cerrar sesión</a></p></button>
-    
+        <a href="/admin/login/logout" class="btn btn-primary">
+          Cerrar sesión</a>
 
+      </p>
     </div>
   </div>
 
+</div>
+
+<div class="row">
+  <div class="col-7" style="margin-top:-9px ;">
+    <h2>Listado de Novedades</h2>
+  </div>
+  <div class="col-5 text-right">
+    <a href="" class="btn btn-success">Nuevo</a>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+    <table class="table">
+      <thead>
+        <tr class="table-dark">
+          <th scope="col">#</th>
+          <th scope="col">Título</th>
+          <th scope="col" class="text-right">Acciones</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each novedades}}
+        <tr>
+          <th scope="row">{{id}}</th>
+          <td>{{titulo}}</td>
+          <td class="text-right">
+            <a href=" " class="btn btn-secondary"><i
+                class="fa fa-pencil"
+                aria-hidden="false"
+              ></i></a>
+            <a href="/admin/novedades/eliminar/{{id}} " class="btn btn-secondary">
+              <i class="fa fa-trash-o" aria-hidden="true"></i>
+            </a>
+
+          </td>
+           {{/each}}
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
