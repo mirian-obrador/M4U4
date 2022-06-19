@@ -186,11 +186,12 @@
         decoración de interiores más populares y las claves para obtenerlos.
       </p>
       <div class="col-lg-5 offset-lg-1"></div>
-      <div class="card-novedades">
+      <div class="card-novedades-ARMAR">
         <!--<div class="card">-->
           {{#each novedades}}
-          <a href="#" data-toggle="modal" data-target="#modalEjemplo"><img src="images/Diseño sin título (10).png" class="card-img-top" alt="..."></a>
-          
+          <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{ id }}">
+            <img src="images/Diseño sin título (10).png" class="card-img-top" alt="...">
+            </a>
             <h5 class="card-title">{{titulo}}</h5>
           {{/each}}
        <!-- </div>-->    
@@ -230,9 +231,31 @@
    </div>
 
     </div>
- 
- 
+
     <!--termina Contacto-->
+
+    <!--Inicio modal-->
+    {{#each novedades}}
+    <div class="modal fade" id="modal{{ id }}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+           <h5 class="modal-title" id="exampleModalLabel">{{ titulo }}</h5>
+           <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+               <span aria-hidden="true">&times;</span>
+           </button>
+          </div>
+          <div class="modal-body">
+            <h6>{{ subtitulo }}</h6>
+            <p>{{ cuerpo }}</p>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    {{/each}}
+    <!--Fin del modal-->
   
   <div class="row">
     <div class="col-lg-12">
