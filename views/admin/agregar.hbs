@@ -4,8 +4,14 @@
 
     <div class="col-6 offset-3">
       <h4>Agregar una nueva novedad</h4>
-      <form action="/admin/novedades/agregar" method="post">
+      <form
+        action="/admin/novedades/agregar"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <div class="py-2"></div>
         <div class="form-group">
+          <label for="">Título</label>
           <input
             type="text"
             class="form-control"
@@ -14,7 +20,9 @@
           />
 
         </div>
+        <div class="py-2"></div>
         <div class="form-group">
+          <label for=" ">Subtítulo</label>
           <textarea
             type="text"
             class="form-control"
@@ -23,7 +31,9 @@
           >
           </textarea>
         </div>
+        <div class="py-2"></div>
         <div class="form-group">
+          <label for="">Cuerpo</label>
           <textarea
             type="text"
             class="form-control"
@@ -31,6 +41,11 @@
             name="cuerpo"
           >
           </textarea>
+        </div>
+        <div class="py-3"></div>
+        <div class="form-group">
+          <label>Imagen:
+            <input type="file" name="imagen" id="imagen" /></label>
         </div>
         <div class="py-2"></div>
         <button type="submit" class="btn btn-primary">Guardar</button>

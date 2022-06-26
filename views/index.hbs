@@ -1,7 +1,7 @@
 <nav class=" navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="images/Enredados_-_2022-03-26T201118.994-removebg-preview.png" alt="" width="110" height="60">
+        <img src="/images/Enredados_-_2022-03-26T201118.994-removebg-preview - Copy.png" alt="" width="110" height="60">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,15 +20,13 @@
     </div>
   </nav>
   <div class="container-fluid">
-    <div id="home" class="row align-items-center hero">
-      <div class="col-lg-6 col-md-9 col-sm-12 offset-lg-2">
-
-        <h1>"Crea tu propio estilo"</h1>
-
-      </div>
-      <div class="ver-colección"><button type="button" class="btn btn-dark">VER COLECCIÓN</button></div>
+     <div id="home" class="row align-items-center hero">
+        <div class="col-lg-5 offset-lg-1 py-5">
+        </div>
+         <div class="col-lg-6 col-md-9 col-sm-12 offset-lg-3">
+            <h1>"Crea tu propio estilo"</h1>
+         </div>
     </div>
-
   </div>
 
   <!--empieza Nosotros-->
@@ -186,16 +184,25 @@
         decoración de interiores más populares y las claves para obtenerlos.
       </p>
       <div class="col-lg-5 offset-lg-1"></div>
-      <div class="card-novedades-ARMAR">
-        <!--<div class="card">-->
-          {{#each novedades}}
+             
+
+    <ul >
+     {{#each novedades}}
+      <div class="row">
+        <div class="col-lg-2">
           <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#modal{{ id }}">
-            <img src="images/Diseño sin título (10).png" class="card-img-top" alt="...">
-            </a>
-            <h5 class="card-title">{{titulo}}</h5>
-          {{/each}}
-       <!-- </div>-->    
-      </div>                 
+            <img src="{{imagen}}">
+            </a>  
+        </div>  
+        <div class="col-lg-3">
+            <h5 class="list-title" >{{titulo}}</h5>
+        </div>
+     </div>
+     <br>
+    {{/each}}
+   </ul> 
+
+
     </div>
     <!--termina Novedades-->
     <!--Arranca Contacto-->
@@ -247,6 +254,7 @@
           </div>
           <div class="modal-body">
             <h6>{{ subtitulo }}</h6>
+           
             <p>{{ cuerpo }}</p>
 
           </div>
